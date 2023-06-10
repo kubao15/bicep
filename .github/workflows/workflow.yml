@@ -11,7 +11,7 @@ env:
     ENVIRONMENT: nonprod
 
 jobs:
-  deploy:
+  say-hello:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
