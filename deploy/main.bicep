@@ -19,10 +19,10 @@ var toyManualsStorageAccountName = 'toyweb${resourceNameSuffix}'
 // Define the SKUs for each component based on the environment type.
 var environmentConfigurationMap = {
   nonprod: {
+    appServiceApp: {
+      alwaysOn: false
+    }
     appServicePlan: {
-      appServiceApp: {
-        alwaysOn: false
-      }
       sku: {
         name: 'F1'
         capacity: 1
